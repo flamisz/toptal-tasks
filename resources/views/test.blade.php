@@ -19,5 +19,11 @@
             </div>
         </div>
     </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+            <notifications-component></notifications-component>
+        </div>
+    </div>
 </div>
 @endsection

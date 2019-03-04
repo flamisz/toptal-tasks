@@ -33,6 +33,6 @@ class ImportChunkReady implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel');
+        return new Channel('channel');
     }
 }

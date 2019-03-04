@@ -14,11 +14,19 @@
                         </div>
                     @endif
 
-                    You are logged in!
-                </div>
+                    <p>
+                        Test queue jobs and live notifications. If you navigate to the <a href="/test">other page</a> during the process, you still get the notifications.
+                    </p>
 
-            <example-component></example-component>
+                    <start-component></start-component>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+            <notifications-component></notifications-component>
         </div>
     </div>
 </div>

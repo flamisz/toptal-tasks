@@ -19,4 +19,4 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/bill', 'BillController@store');
+Route::post('/bill', 'BillController@store');
