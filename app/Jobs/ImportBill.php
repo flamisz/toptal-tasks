@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Events\ImportReady;
 use Illuminate\Bus\Queueable;
 use App\Events\ImportChunkReady;
 use Illuminate\Queue\SerializesModels;
@@ -43,5 +44,7 @@ class ImportBill implements ShouldQueue
 
             event(new ImportChunkReady($key));
         }
+
+        event(new ImportReady($this->file));
     }
 }
