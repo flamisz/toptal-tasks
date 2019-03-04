@@ -39,8 +39,11 @@ class ImportBill implements ShouldQueue
 
         foreach ($chunks as $key => $chunk) {
             $chunk->each(function ($row) {
-                sleep(config('test.sleeptime'));
+                // do something with the row
+                $row = $row * 10;
             });
+
+            sleep(config('test.sleeptime'));
 
             event(new ImportChunkReady($key));
         }
