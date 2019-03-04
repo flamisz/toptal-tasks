@@ -43,8 +43,6 @@ class ImportBill implements ShouldQueue
                 $row = $row * 10;
             });
 
-            sleep(config('test.sleeptime'));
-
             event(new ImportChunkReady($key));
         }
 
