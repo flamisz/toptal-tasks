@@ -33,6 +33,7 @@ class ImportChunkReady implements ShouldBroadcast
      */
     public function broadcastOn()
     {
+        sleep(config('test.sleeptime'));
         return new Channel('channel');
     }
 }
