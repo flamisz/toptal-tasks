@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'sleeptime' => env('SLEEPTIME', 10000),
+    'sleeptime' => env('SLEEPTIME', 5),
 ];
